@@ -2,14 +2,14 @@
 The implement and summary of the above studies are as follows:
 Personalized Real-Time Federated Learning for Epileptic Seizure Detection. IEEE J. Biomed. Health Informatics 26(2): 898-909 (2022)
 This study introduces personalized federated learning in the detection of epileptic seizures. Sensitivity and Specificity were used as the indexes for personalized local model update to optimize the two-category classification for epileptic seizures. Because the datasets of this study are not public, we implemented the framework of their personalize update federated algorithm and evaluate their method with the models and datasets we used.
-The main process of implement can be seen in the file 
+The main process of implement can be seen in the file main_fed_Baghersalimi.py
 Pain-FL: Personalized Privacy-Preserving Incentive for Federated Learning. IEEE J. Sel. Areas Commun. 39(12): 3805-3820 (2021)
 This study proposes a contract-based personalized privacy protection incentive method, which can provide customized rewards for participants with different privacy preferences while ensuring good convergence of federated model. They quantitatively analyze the PPL and privacy cost of each participant based on the changes caused by the injection of Gaussian noise into the gradient disturbance and the individual privacy preferences of participants and update the global model by aggregating the nonuniform perturbation random gradients from the participants. In consideration of performance, we did not implement all the contracts in this paper and only selected the scenarios with the best performance test on the MNIST dataset in this study. Then we evaluate their method with the models and datasets we used.
-The main process of implement can be seen in the file 
+The main process of implement can be seen in the file main_fed_painFL.py
 Personalized Cross-Silo Federated Learning on Non-IID Data. AAAI 2021: 7865-7873
 Details:
 https://developer.huaweicloud.com/develop/aigallery/notebook/detail?id=6d4a9521-6a4d-4b6d-b84d-943d7c7b1cbd&ticket=ST-174890-SmeScEtTdiDPK1DXOC1v2WJ6-sso&ticket=ST-223559-NUkV9o5xzt5ykRqRPtxcEgdu-sso&ticket=ST-261379-wSPkyf0esGJbngEI2dMackaK-sso&ticket=ST-426648-mfN1DPVwTBOQHYCbwteXmCMy-sso
 This study explored a new idea for facilitating pairwise collaboration between clients with similar data based on the Non-i.i.d problem. They propose a new method employing federated attentive message passing to facilitate similar clients to collaborate more. We evaluated our datasets through the code interface provided in this study.
 PFedAtt: Attention-based Personalized Federated Learning on Heterogeneous Clients. ACML 2021: 1253-1268
 This study proposed a federated learning framework which the server maintains several personalized cloud models, which capture the common knowledge from the top-k similar clients. They use Euclidean distance of the model parameters to measure similarity between each client. We implemented the framework of their personalize update federated algorithm and evaluate their method with the models and datasets we used.
-The main process of implement can be seen in the file 
+The main process of implement can be seen in the file main_fed_PFedAtt.py
